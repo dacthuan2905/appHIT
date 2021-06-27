@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/HomePage" android:title="Trang chủ" android:icon="@drawable/homepage"/>
+    <item android:id="@+id/ClassRoom" android:title="Lớp học" android:icon="@drawable/classroom"/>
+    <item android:id="@+id/News" android:title="Bảng tin" android:icon="@drawable/newspaper"/>
+    <item android:id="@+id/Personal" android:title="Cá nhân" android:icon="@drawable/personal"/>
+
+</menu>
