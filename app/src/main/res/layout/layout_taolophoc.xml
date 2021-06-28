@@ -15,6 +15,18 @@
         android:drawablePadding="10dp"
         android:textColorHint="#CCC"
         android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edtLeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edittext"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:hint="Nhập Leader"
+        android:drawablePadding="10dp"
+        android:textColorHint="#CCC"
+        android:textColor="@color/black"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
