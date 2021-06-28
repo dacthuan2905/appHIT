@@ -33,49 +33,56 @@
         android:layout_below="@id/add_class"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         app:cardCornerRadius="8dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp">
+
             <TextView
+                android:id="@+id/TenLopHoc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/TenLopHoc"
-                android:textSize="24sp"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="10dp"
-                android:textColor="#FF5722"/>
+                android:text="Android_HIT_2020"
+                android:textColor="#FF5722"
+                android:textSize="24sp" />
+
             <TextView
                 android:id="@+id/Leader"
-                android:layout_below="@id/TenLopHoc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Leader:"/>
+                android:layout_below="@id/TenLopHoc"
+                android:text="Leader:" />
 
             <TextView
                 android:id="@+id/tv_Leader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/TenLopHoc"
+                android:layout_marginStart="5dp"
                 android:layout_toEndOf="@id/Leader"
-                android:layout_below="@id/TenLopHoc"/>
+                android:text="Đức Điệp" />
+
             <TextView
                 android:id="@+id/SoLuong"
-                android:layout_below="@id/Leader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Số lượng: "/>
+                android:layout_below="@id/Leader"
+                android:text="Số lượng: " />
+
             <TextView
                 android:id="@+id/tv_SoLuong"
-                android:layout_below="@id/Leader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/SoLuong"/>
+                android:layout_below="@id/Leader"
+                android:layout_toEndOf="@id/SoLuong"
+                android:text="13" />
 
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
+
 
 
 </RelativeLayout>

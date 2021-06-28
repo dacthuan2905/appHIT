@@ -19,4 +19,5 @@
         app:menu="@menu/menu_bottom"
         app:itemTextColor="@color/custom_color_navigation"
         app:itemIconTint="@color/custom_color_navigation"/>
+
 </RelativeLayout>

@@ -96,7 +96,7 @@ public class SignIn extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 Toast.makeText(getBaseContext(), "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(SignIn.this, ForgetPassword.class);
+                Intent intent = new Intent(SignIn.this, MainActivity.class);
                 startActivity(intent);
             }
         }, new Response.ErrorListener() {

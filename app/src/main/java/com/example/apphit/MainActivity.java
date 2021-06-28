@@ -1,30 +1,37 @@
 package com.example.apphit;
 
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.text.Layout;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-
+import com.example.apphit.Category.CategoryAdapter;
 import com.example.apphit.fragment.ViewPagerAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private BottomNavigationView bottomNavigationView;
+    private RecyclerView rcvCategory;
+    private CategoryAdapter categoryAdapter;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        rcvCategory=findViewById(R.id.rcv_category);
+//        categoryAdapter=new CategoryAdapter(this);
+//
+//        LinearLayoutManager linearLayoutManager =new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
+//        rcvCategory.setLayoutManager(linearLayoutManager);
+//        categoryAdapter.setData(getListCategory());
+//        rcvCategory.setAdapter(categoryAdapter);
+
         viewPager=findViewById(R.id.viewpager);
         bottomNavigationView=findViewById(R.id.bottom);
         ViewPagerAdapter adapter=new ViewPagerAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
@@ -81,5 +88,27 @@ public class MainActivity extends AppCompatActivity {
         }
     });
 
+
     }
-}
+//    private List<Category> getListCategory(){
+//        List<Category> listCategory=new ArrayList<>();
+//
+//        List<Category> list = new ArrayList<>();
+//        List<Image> listImage=new ArrayList<>();
+//        listImage.add(new Image(R.drawable.hit1,"Ban Quản trị"));
+//        listImage.add(new Image(R.drawable.hit1,"Ban Quản trị"));
+//        listImage.add(new Image(R.drawable.hit1,"Ban Quản trị"));
+//        listImage.add(new Image(R.drawable.hit1,"Ban Quản trị"));
+//        listImage.add(new Image(R.drawable.hit1,"Ban Quản trị"));
+//        listImage.add(new Image(R.drawable.hit1,"Ban Quản trị"));
+//
+//        listCategory.add(new Category("Giới thiệu chung",listImage));
+//        listCategory.add(new Category("Hoạt động",listImage));
+//        listCategory.add(new Category("Hình ảnh",listImage));
+//
+//        return listCategory;
+
+    }
+
+
+

@@ -1,15 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.HomePage"
-    android:background="@color/purple_200">
-
+    android:background="@color/white"
+    tools:context=".fragment.HomePage">
     <!-- TODO: Update blank fragment layout -->
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="gffff"
-       />
-</ScrollView>
+    <RelativeLayout
+        android:id="@+id/taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF5722">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:src="@mipmap/hit"
+            app:tint="@color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tvcategory1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskbar">
+
+    <TextView
+        android:id="@+id/category1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:text="Giới thiệu chung"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+            <ImageView
+                android:layout_below="@id/category1"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:src="@drawable/hit2"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
