@@ -17,11 +17,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/username"
         android:layout_toEndOf="@id/avtuser"
-        android:textSize="16sp"
+        android:textSize="24sp"
         android:layout_centerVertical="true"
         android:text="aaaaaaaa"
         android:layout_marginStart="10dp"
         android:textColor="@color/black"/>
     </RelativeLayout>
-
 </androidx.cardview.widget.CardView>

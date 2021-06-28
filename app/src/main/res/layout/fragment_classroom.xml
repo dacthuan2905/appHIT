@@ -1,17 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.HomePage"
-    android:background="@color/purple_200">
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hi"
-        android:layout_centerInParent="true"
-        android:textSize="22sp" />
+        android:id="@+id/add_class">
+        <ImageView
+            android:id="@+id/imgadd_class"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/plus"
+            app:tint="#EF5F33"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo lớp học"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/imgadd_class"
+            android:layout_centerVertical="true"
+            android:textColor="#EF5F33"
+            />
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/add_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TenLopHoc"
+                android:textSize="24sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:textColor="#FF5722"/>
+            <TextView
+                android:id="@+id/Leader"
+                android:layout_below="@id/TenLopHoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leader:"/>
+
+            <TextView
+                android:id="@+id/tv_Leader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Leader"
+                android:layout_below="@id/TenLopHoc"/>
+            <TextView
+                android:id="@+id/SoLuong"
+                android:layout_below="@id/Leader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng: "/>
+            <TextView
+                android:id="@+id/tv_SoLuong"
+                android:layout_below="@id/Leader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/SoLuong"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>
